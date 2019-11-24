@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.ServicesRESTNet.Client.Web", "Galaxy.ServicesRESTNet.Client.Web\Galaxy.ServicesRESTNet.Client.Web.csproj", "{9A4654BB-A32C-4EF6-B5CB-2AC73200668A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.ServicesRESTNet.API", "Galaxy.ServicesRESTNet.API\Galaxy.ServicesRESTNet.API.csproj", "{26AA413C-F1E8-42C0-803B-1AAE9EA28FA9}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.ServicesRESTNet.EF", "Galaxy.ServicesRESTNet.EF\Galaxy.ServicesRESTNet.EF.csproj", "{14232394-FF90-4FB6-90BA-A0CACAD06F5F}"
-EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Galaxy.ServicesRESTNet.DB", "Galaxy.ServicesRESTNet.DB\Galaxy.ServicesRESTNet.DB.sqlproj", "{9524BBC2-063B-48BD-9110-B8409A4EBBEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.ServicesRESTNet.EF", "Galaxy.ServicesRESTNet.EF\Galaxy.ServicesRESTNet.EF.csproj", "{9EB3242F-35C2-4760-B2C2-C641885793CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.ServicesRESTNet.API", "Galaxy.ServicesRESTNet.API\Galaxy.ServicesRESTNet.API.csproj", "{CA91598A-DED9-41C6-9A1A-937E7CF98344}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,20 +21,20 @@ Global
 		{9A4654BB-A32C-4EF6-B5CB-2AC73200668A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A4654BB-A32C-4EF6-B5CB-2AC73200668A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A4654BB-A32C-4EF6-B5CB-2AC73200668A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{26AA413C-F1E8-42C0-803B-1AAE9EA28FA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26AA413C-F1E8-42C0-803B-1AAE9EA28FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26AA413C-F1E8-42C0-803B-1AAE9EA28FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26AA413C-F1E8-42C0-803B-1AAE9EA28FA9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{14232394-FF90-4FB6-90BA-A0CACAD06F5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{14232394-FF90-4FB6-90BA-A0CACAD06F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14232394-FF90-4FB6-90BA-A0CACAD06F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14232394-FF90-4FB6-90BA-A0CACAD06F5F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9524BBC2-063B-48BD-9110-B8409A4EBBEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9524BBC2-063B-48BD-9110-B8409A4EBBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9524BBC2-063B-48BD-9110-B8409A4EBBEA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{9524BBC2-063B-48BD-9110-B8409A4EBBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9524BBC2-063B-48BD-9110-B8409A4EBBEA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9524BBC2-063B-48BD-9110-B8409A4EBBEA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9EB3242F-35C2-4760-B2C2-C641885793CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EB3242F-35C2-4760-B2C2-C641885793CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EB3242F-35C2-4760-B2C2-C641885793CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EB3242F-35C2-4760-B2C2-C641885793CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA91598A-DED9-41C6-9A1A-937E7CF98344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA91598A-DED9-41C6-9A1A-937E7CF98344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA91598A-DED9-41C6-9A1A-937E7CF98344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA91598A-DED9-41C6-9A1A-937E7CF98344}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -32,11 +32,19 @@ namespace Galaxy.ServicesRESTNet.EF.Context
 
             modelBuilder.Entity<Alumno>(entity =>
             {
-                entity.Property(e => e.ApellidoMaterno).IsUnicode(false);
+                entity.ToTable("Alumno", "Entrenamiento");
 
-                entity.Property(e => e.ApellidoPaterno).IsUnicode(false);
+                entity.Property(e => e.ApellidoMaterno)
+                    .HasMaxLength(250)
+                    .IsUnicode(false);
 
-                entity.Property(e => e.Nombre).IsUnicode(false);
+                entity.Property(e => e.ApellidoPaterno)
+                    .HasMaxLength(250)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Nombre)
+                    .HasMaxLength(250)
+                    .IsUnicode(false);
             });
 
             OnModelCreatingPartial(modelBuilder);

@@ -18,7 +18,7 @@
       }
    ],
    "UseDatabaseNames": false,
-   "UseFluentApiOnly": false,
+   "UseFluentApiOnly": true,
    "UseHandleBars": false,
    "UseInflector": true,
    "UseLegacyPluralizer": false
