@@ -27,6 +27,7 @@ namespace Galaxy.DI.Web
             services.AddTransient<GuidServiceTransient>();
             services.AddSingleton<GuidServiceSingleton>();
             services.AddScoped<GuidServiceScoped>();
+
             services.AddTransient<ClientGuid>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

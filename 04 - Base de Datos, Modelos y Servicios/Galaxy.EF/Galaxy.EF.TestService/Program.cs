@@ -29,7 +29,9 @@ namespace Galaxy.EF.TestService
             Console.WriteLine("List Post");
             Console.WriteLine("=========");
 
-            List<Post> posts = postApplicationService.List();
+            //List<Post> posts = postApplicationService.List();
+            List<Post> posts = postApplicationService.GetPosts();
+
             posts.ForEach(item =>
             {
                 Console.WriteLine(item.Titulo);
