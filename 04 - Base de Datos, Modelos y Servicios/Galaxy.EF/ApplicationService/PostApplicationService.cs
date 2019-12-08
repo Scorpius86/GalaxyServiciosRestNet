@@ -31,6 +31,44 @@ namespace Galaxy.EF.ApplicationService
             return posts;
         }
 
+        public List<Post> ListSP()
+        {
+            var posts = _galaxyContext.Posts.FromSql("[uspListPost]").ToList();
+
+            return posts;
+        }
+
+        public List<Post> GetPosts()
+        {
+            List<Post> posts = new List<Post>();
+            // var table = _galaxyContext.Database.ExecuteSqlCommand("[uspListPost]");
+            using (var command = _galaxyContext.Database.GetDbConnection().CreateCommand())
+            {
+                command.CommandText = "[uspListPost]";
+                _galaxyContext.Database.OpenConnection();
+
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            Post post = new Post();
+                            post.PostId = reader.GetInt32(0);
+                            post.Titulo = reader.GetString(1);
+
+                            posts.Add(post);
+                        }
+                    }
+                }
+            }
+
+            return posts;
+            //return _libraryContext.Authors.FromSql("usp_ListAuthors").ToList();
+
+            //return _libraryContext.Authors.ToList();
+        }
+
         public void Update(Post post)
         {
             Usuario usuario = _galaxyContext.Usuarios.Find(1);

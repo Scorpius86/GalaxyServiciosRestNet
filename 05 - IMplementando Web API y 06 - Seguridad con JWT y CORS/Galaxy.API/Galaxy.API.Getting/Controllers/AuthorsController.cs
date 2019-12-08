@@ -26,7 +26,19 @@ namespace Galaxy.API.Getting.Controllers
         public IActionResult GetAuthors()
         {
             var authorsFromRepo = _libraryRepository.GetAuthors();
+            /*
+            List<AuthorDto> authorDtos = new List<AuthorDto>();
+            authorsFromRepo.ToList().ForEach(author =>
+            {
+                AuthorDto authorDto = new AuthorDto();
+                authorDto.Name = author.FirstName + " " + author.LastName;
+                authorDto.Genre = author.Genre;
 
+                authorDtos.Add(authorDto);
+            }); 
+            return Ok(authorDtos); 
+            */
+            //throw new Exception("Mi error");
             var authors = Mapper.Map<IEnumerable<AuthorDto>>(authorsFromRepo);
             return Ok(authors);
         }
@@ -38,7 +50,7 @@ namespace Galaxy.API.Getting.Controllers
 
             if (authorFromRepo == null)
             {
-                return NotFound();
+                return NoContent();
             }
 
             var author = Mapper.Map<AuthorDto>(authorFromRepo);

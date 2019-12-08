@@ -1,14 +1,14 @@
 ﻿{
-   "ContextClassName": "GalaxyDatabaseContext",
+   "ContextClassName": "GalaxyBlogContext",
    "ContextNamespace": null,
    "DefaultDacpacSchema": null,
    "DoNotCombineNamespace": false,
    "IdReplace": false,
    "IncludeConnectionString": false,
    "ModelNamespace": null,
-   "OutputContextPath": "Entities\/DataAnotation",
-   "OutputPath": "Entities\/DataAnotation",
-   "ProjectRootNamespace": "Galaxy.EF.CodeFirst",
+   "OutputContextPath": "Data\/Context",
+   "OutputPath": "Data\/Entities",
+   "ProjectRootNamespace": "Galaxy.Blog.API",
    "SelectedHandlebarsLanguage": 0,
    "SelectedToBeGenerated": 0,
    "Tables": [
@@ -26,7 +26,7 @@
       }
    ],
    "UseDatabaseNames": false,
-   "UseFluentApiOnly": false,
+   "UseFluentApiOnly": true,
    "UseHandleBars": false,
    "UseInflector": true,
    "UseLegacyPluralizer": false,
