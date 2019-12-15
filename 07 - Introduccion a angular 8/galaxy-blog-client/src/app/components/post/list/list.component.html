@@ -1,0 +1,14 @@
+<table>
+    <thead>
+        <th>PostId</th>
+        <th>Titulo</th>
+        <th>Contenido</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let post of posts">
+            <td>{{ post.PostId }}</td>
+            <td>{{ post.Titulo }}</td>
+            <td>{{ post.Contenido }}</td>
+        </tr>
+    </tbody>
+</table>
