@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/models/post';
 import { PostService } from 'src/app/services/post.service';
-import { MatTableDataSource } from '@angular/material';
 
 @Component({
   selector: 'app-list',
@@ -11,7 +10,6 @@ import { MatTableDataSource } from '@angular/material';
 export class ListComponent implements OnInit {
   posts:Post[]= new Array<Post>();
   displayedColumns: string[] = ['PostId','Titulo','Contenido'];
-  dataSource: MatTableDataSource<Post>;  
 
   constructor(
     private postService: PostService
@@ -30,7 +28,6 @@ export class ListComponent implements OnInit {
     */
    this.postService.getPosts().subscribe(posts =>{
      this.posts = posts;
-     this.dataSource = new MatTableDataSource<Post>(this.posts);
    })
 
   }
