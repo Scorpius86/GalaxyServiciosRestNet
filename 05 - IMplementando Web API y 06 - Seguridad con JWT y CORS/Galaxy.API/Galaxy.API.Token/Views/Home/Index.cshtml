@@ -1,0 +1,39 @@
+﻿@model Galaxy.API.Token.Model.AppUserAuth
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-sm-4">
+        <div class="card shadow p-3 mb-5 bg-white rounded" style="border-color:#7030a0">
+            <div class="card-body">
+                <h5 class="card-title" style="color:#7030a0">Credencial</h5>
+                <p class="card-text">Token :</p>
+                <p><strong>@Model.BearerToken</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card shadow p-3 mb-5 bg-white rounded" style="border-color:#7030a0">
+            <div class="card-body">
+                <h5 class="card-title" style="color:#7030a0">Datos</h5>
+                <p class="card-text">Usuario : @Model.UserName</p>
+                <p class="card-text">IsAuthenticated : @Model.IsAuthenticated</p>
+                <p class="card-text">CanAccessCategories : @Model.CanAccessCategories</p>
+                <p class="card-text">CanAccessProducts : @Model.CanAccessProducts</p>
+                <p class="card-text">CanAddCategory : @Model.CanAddCategory</p>
+                <p class="card-text">CanAddProduct : @Model.CanAddProduct</p>
+                <p class="card-text">CanSaveProduct : @Model.CanSaveProduct</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
